@@ -18,8 +18,11 @@ import {
   Wrench,
   AlertTriangle,
   Info,
-  Cpu, // Added Cpu icon
+  Cpu,
+  ArrowRight,
+  Users,
 } from 'lucide-react';
+import { cn } from "@/lib/utils";
 
 export const Icons = {
   Logo: (props: LucideProps) => <Layers {...props} />,
@@ -39,11 +42,7 @@ export const Icons = {
   Wrench: (props: LucideProps) => <Wrench {...props} />,
   AlertTriangle: (props: LucideProps) => <AlertTriangle {...props} />,
   Info: (props: LucideProps) => <Info {...props} />,
-  Cpu: (props: LucideProps) => <Cpu {...props} />, // Added Cpu icon
+  Cpu: (props: LucideProps) => <Cpu {...props} />,
+  ArrowRight: (props: LucideProps) => <ArrowRight {...props} />,
+  Users: (props: LucideProps) => <Users {...props} />,
 };
-
-// Helper for cn if not globally available in this file context, otherwise remove.
-// For components, usually it's imported from "@/lib/utils"
-function cn(...inputs: any[]) {
-  return inputs.filter(Boolean).join(' ');
-}
