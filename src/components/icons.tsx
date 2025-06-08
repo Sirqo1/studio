@@ -1,3 +1,4 @@
+
 import type { LucideProps } from 'lucide-react';
 import {
   GitCommit,
@@ -17,6 +18,7 @@ import {
   Wrench,
   AlertTriangle,
   Info,
+  Cpu, // Added Cpu icon
 } from 'lucide-react';
 
 export const Icons = {
@@ -37,6 +39,7 @@ export const Icons = {
   Wrench: (props: LucideProps) => <Wrench {...props} />,
   AlertTriangle: (props: LucideProps) => <AlertTriangle {...props} />,
   Info: (props: LucideProps) => <Info {...props} />,
+  Cpu: (props: LucideProps) => <Cpu {...props} />, // Added Cpu icon
 };
 
 // Helper for cn if not globally available in this file context, otherwise remove.

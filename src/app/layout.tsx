@@ -1,10 +1,11 @@
+
 import type {Metadata} from 'next';
 import './globals.css';
-import { Toaster } from "@/components/ui/toaster"; // Added Toaster
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'React GitHub Pages',
-  description: 'Manage your React app deployments to GitHub Pages.',
+  title: 'Firebase Studio App',
+  description: 'A Next.js application built with Firebase Studio.',
 };
 
 export default function RootLayout({

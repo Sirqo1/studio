@@ -1,17 +1,17 @@
+
 import type { LucideProps } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import type { ElementType } from 'react';
 
 interface FeatureCardProps {
   title: string;
   description?: string;
   icon?: ElementType<LucideProps>;
-  children: React.ReactNode;
   className?: string;
   actions?: React.ReactNode;
 }
 
-export function FeatureCard({ title, description, icon: Icon, children, className, actions }: FeatureCardProps) {
+export function FeatureCard({ title, description, icon: Icon, className, actions }: FeatureCardProps) {
   return (
     <Card className={className}>
       <CardHeader>
@@ -24,9 +24,6 @@ export function FeatureCard({ title, description, icon: Icon, children, classNam
         </div>
         {description && <CardDescription>{description}</CardDescription>}
       </CardHeader>
-      <CardContent>
-        {children}
-      </CardContent>
     </Card>
   );
 }
